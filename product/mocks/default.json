@@ -1,0 +1,66 @@
+[
+  {
+      "id": "1",
+      "title": "cuaderno 1",
+      "category": "libreria",
+      "description": "tapa blanda",
+      "image": "https://images.unsplash.com/photo-1601001435957-74f0958a93fb?ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8bm90ZWJvb2t8ZW58MHwyfDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60",
+      "price": 500
+  },
+  {
+      "id": "2",
+      "title": "cuaderno 2",
+      "category": "libreria",
+      "description": "rayado",
+      "image": "https://images.unsplash.com/photo-1471970471555-19d4b113e9ed?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NXx8bm90ZWJvb2t8ZW58MHwyfDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60",
+      "price": 600
+  },
+  {
+      "id": "3",
+      "title": "cuaderno 3",
+      "category": "libreria",
+      "description": "tapa dura",
+      "image": "https://images.unsplash.com/photo-1569929232302-7f89963ea179?ixid=MnwxMjA3fDB8MHxzZWFyY2h8OXx8bm90ZWJvb2t8ZW58MHwyfDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60",
+      "price": 620
+  },
+  {
+      "id": "4",
+      "title": "cuaderno 4",
+      "category": "libreria",
+      "description": "tapa blanda",
+      "image": "https://images.unsplash.com/photo-1535556116002-6281ff3e9f36?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTB8fG5vdGVib29rfGVufDB8MnwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60",
+      "price": 680
+  },
+  {
+      "id": "5",
+      "title": "cuaderno 5",
+      "category": "libreria",
+      "description": "tapa dura",
+      "image": "https://images.unsplash.com/photo-1471970394675-613138e45da3?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTR8fG5vdGVib29rfGVufDB8MnwwfHw%3D&auto=format&fit=crop&w=500&q=60",
+      "price": 600
+  },
+  {
+      "id": "6",
+      "title": "cuaderno 6",
+      "category": "libreria",
+      "description": "rayado",
+      "image": "https://images.unsplash.com/photo-1505569127510-bde1536937bc?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjB8fG5vdGVib29rfGVufDB8MnwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60",
+      "price": 720
+  },
+  {
+      "id": "7",
+      "title": "cuaderno 7",
+      "category": "libreria",
+      "description": "cuadriculado",
+      "image": "https://images.unsplash.com/photo-1608142172765-6949c94646ca?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjJ8fG5vdGVib29rfGVufDB8MnwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60",
+      "price": 480
+  },
+  {
+      "id": "8",
+      "title": "cuaderno 8",
+      "category": "libreria",
+      "description": "bullet",
+      "image": "https://images.unsplash.com/photo-1617177435596-1c9e30d6d608?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjV8fG5vdGVib29rfGVufDB8MnwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60",
+      "price": 560
+  }
+]

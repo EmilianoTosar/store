@@ -1,4 +1,4 @@
-import React from "react"
+import * as React from "react"
 import { ChakraProvider, Container, Image, VStack, Text, Heading, Box, Divider } from "@chakra-ui/react"
 import { AppProps } from "next/app"
 

@@ -6,6 +6,8 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
+    "test": "jest",
+    "integration": "cypress run",
     "lint": "next lint"
   },
   "dependencies": {
@@ -20,13 +22,20 @@
     "react-dom": "17.0.2"
   },
   "devDependencies": {
+    "@testing-library/jest-dom": "^5.14.1",
+    "@testing-library/react": "^12.0.0",
+    "@types/axios": "^0.14.0",
+    "@types/jest": "^26.0.24",
     "@types/node": "^15.12.5",
+    "@types/papaparse": "^5.2.5",
     "@types/react": "^17.0.11",
     "@types/react-dom": "^17.0.8",
-    "@types/axios": "^0.14.0",
-    "@types/papaparse": "^5.2.5",
+    "cypress": "^7.7.0",
     "eslint": "7.29.0",
     "eslint-config-next": "11.0.1",
+    "eslint-plugin-cypress": "^2.11.3",
+    "jest": "^27.0.6",
+    "ts-jest": "^27.0.3",
     "typescript": "^4.3.4"
   }
 }
