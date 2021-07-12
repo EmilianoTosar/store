@@ -36,6 +36,7 @@
     "eslint-plugin-cypress": "^2.11.3",
     "jest": "^27.0.6",
     "ts-jest": "^27.0.3",
-    "typescript": "^4.3.4"
+    "typescript": "^4.3.4",
+    "wait-on": "^6.0.0"
   }
 }
