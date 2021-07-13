@@ -54,7 +54,7 @@ const CartDrawer: React.FC<Props> = ({items, onDecrement, onIncrement, onClose, 
             <Stack spacing={4} divider={<Divider />}>
               {items.map((product) => {
                 return (
-                  <Stack direction='row' key={product.id}> 
+                  <Stack data-testid='cart-item' direction='row' key={product.id}> 
                     <Stack width='100%'>
                       <Stack direction='row' justifyContent='space-between'>
                         <Text fontWeight='500'>
@@ -68,6 +68,7 @@ const CartDrawer: React.FC<Props> = ({items, onDecrement, onIncrement, onClose, 
                         <Button 
                           size='xs' 
                           onClick={() => onDecrement(product)}
+                          data-testid='decrement'
                         >
                           {' '}-{' '}
                         </Button>
@@ -75,6 +76,7 @@ const CartDrawer: React.FC<Props> = ({items, onDecrement, onIncrement, onClose, 
                         <Button 
                           size='xs' 
                           onClick={() => onIncrement(product)}
+                          data-testid='increment'
                         >
                           {' '}+{' '}
                         </Button>

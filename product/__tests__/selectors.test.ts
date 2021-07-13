@@ -1,16 +1,22 @@
+/**
+ * @jest-environment jsdom
+ */
+
 import { editCart } from "../selectors"
 import { CartItem, Product } from "../types"
 
+const product: Product = {
+  id: 'id',
+  category: 'category',
+  description: 'description',
+  image: 'image', 
+  price: 100,
+  title: 'title'
+}
+
 describe('editCart', () => {
   it('deberia reducir la cantidad de un producto en 1', () => {
-    const product: Product = {
-      id: 'id',
-      category: 'category',
-      description: 'description',
-      image: 'image', 
-      price: 100,
-      title: 'title'
-    }
+    
     const actual: CartItem[] = [{...product, quantity: 5}]
     const expected: CartItem[] = [{...product, quantity: 4}]
 

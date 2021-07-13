@@ -14,7 +14,7 @@ const ProductCard: React.FC<Props> = ({product, onAdd}) => {
 
   return (
     <>
-      <Stack data-test-id='product' spacing={3} borderRadius='md' padding={4} key={product.id} backgroundColor="gray.100">
+      <Stack data-testid='product' spacing={3} borderRadius='md' padding={4} key={product.id} backgroundColor="gray.100">
         <Stack spacing={1}>
           <Image 
             src={product.image}
