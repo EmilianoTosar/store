@@ -16,7 +16,7 @@ const App: React.FC<AppProps> = ({ Component, pageProps }) => {
           borderRadius='sm'
         >
           <VStack marginBottom={6}>
-            <Image borderRadius={9999} src="//placehold.it/128x128"></Image>
+            <Image borderRadius={9999} src="//via.placeholder.com/128"></Image>
             <Heading>Canelo Taller</Heading>
             <Text>Los cuadernos mas cutes del mundo mundial</Text>
           </VStack>

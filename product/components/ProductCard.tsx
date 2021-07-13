@@ -21,6 +21,7 @@ const ProductCard: React.FC<Props> = ({product, onAdd}) => {
             alt={product.title}
             as={motion.img}
             cursor='pointer'
+            loading='lazy'
             layoutId={product.image}
             maxHeight={220}
             objectFit='cover' 
