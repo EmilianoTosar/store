@@ -44,6 +44,7 @@ const StoreScreen: React.FC<Props> = ({products}) => {
                 bottom={4}
               >
                 <Button
+                  data-testid='show-cart'
                   padding={4}
                   size='lg'
                   colorScheme="whatsapp"

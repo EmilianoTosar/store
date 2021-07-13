@@ -49,7 +49,7 @@ const CartDrawer: React.FC<Props> = ({items, onDecrement, onIncrement, onClose, 
         <DrawerContent>
           <DrawerCloseButton />
           <DrawerHeader>Tu pedido</DrawerHeader>
-          <DrawerBody>
+          <DrawerBody data-testid='cart'>
             {Boolean(items.length) ? ( 
             <Stack spacing={4} divider={<Divider />}>
               {items.map((product) => {
@@ -94,6 +94,7 @@ const CartDrawer: React.FC<Props> = ({items, onDecrement, onIncrement, onClose, 
           {Boolean(items.length) && (
             <DrawerFooter> 
               <Button
+                data-testid='complete-order'
                 as={Link}
                 padding={4}
                 isExternal
