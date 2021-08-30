@@ -1,5 +1,6 @@
 import axios from "axios"
 import Papa from "papaparse"
+import { INFORMATION } from "../app/constants"
 
 import { Product } from "./types"
 
@@ -7,7 +8,7 @@ export default {
   list: async (): Promise<Product[]> => {
     return axios
       .get(
-        `https://docs.google.com/spreadsheets/d/e/2PACX-1vTvXNkv5UYvEpt7p7Tb2_6KyeWSunfDUriC52DwHZv9DZa84RWV8VsjusJnRWRT7juAj1v0Qk7IX_-5/pub?output=csv`,
+       INFORMATION.sheet,
         {
           responseType: 'blob'
         }

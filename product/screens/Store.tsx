@@ -6,6 +6,7 @@ import { Product, CartItem } from "../types"
 import ProductCard from '../components/ProductCard'
 import CartDrawer from '../components/CartDrawer'
 import { editCart } from '../selectors'
+import { parseCurrency } from '../../utils/currency'
 
 interface Props {
   products: Product[]
@@ -15,6 +16,14 @@ const StoreScreen: React.FC<Props> = ({products}) => {
   const [cart, setCart] = React.useState<CartItem[]>([])
   const [isCartOpen, toggleCart] = React.useState<boolean>(false)
   
+  const total = React.useMemo(
+    () => 
+      parseCurrency(cart.reduce((total, product) => total + product.price * product.quantity, 0)),
+      [cart]
+    )
+      
+  const quantity = React.useMemo(() => cart.reduce((acc, item) => acc + item.quantity, 0), [cart]);
+
   function handleEditCart(product: Product, action: 'increment' | 'decrement') {
     setCart(editCart(product, action))
   }
@@ -24,7 +33,7 @@ const StoreScreen: React.FC<Props> = ({products}) => {
       <AnimateSharedLayout type='crossfade'>
         <Stack spacing={6}>
           {Boolean(products.length) ? (
-            <Grid gridGap={6} templateColumns="repeat(auto-fill, minmax(240px, 1fr))">
+            <Grid gridGap={8} templateColumns="repeat(auto-fill, minmax(240px, 1fr))">
               {products.map((product) => (
                   <ProductCard product={product} key={product.id} onAdd={(product) => handleEditCart(product, 'increment')} />
                 )  
@@ -45,15 +54,33 @@ const StoreScreen: React.FC<Props> = ({products}) => {
               >
                 <Button
                   data-testid='show-cart'
-                  padding={4}
+                  boxShadow='xl'
                   size='lg'
-                  colorScheme="whatsapp"
+                  colorScheme="primary"
                   width={{base: '100%', sm: 'fit-content'}}
                   onClick={() => toggleCart(true)}
                 >
-                  Ver Pedido ({cart.reduce((acc, item) => {
-                    return acc + item.quantity
-                  }, 0)} productos)
+                  <Stack alignItems='center' direction='row' spacing={6}>
+                    <Stack alignItems="center" direction="row" spacing={3}>
+                      <Text fontSize="md" lineHeight={6}>
+                        Ver Pedido
+                      </Text>
+                      <Text 
+                        backgroundColor="rgba(0,0,0,0.25)" 
+                        fontSize='xs' 
+                        paddingY={1}
+                        paddingX={2}
+                        fontWeight='500'
+                        borderRadius='sm'
+                        color='gray.100'
+                      >
+                        {quantity} items
+                      </Text>
+                    </Stack>
+                    <Text fontSize="md" lineHeight={6}>
+                      {total}
+                    </Text>
+                  </Stack>
                 </Button>
               </Flex>
             )}    
