@@ -35,7 +35,7 @@ const App: React.FC<AppProps> = ({ Component, pageProps }) => {
               >
                 <Box 
                   minWidth={{base: 24, sm: 32}} 
-                  marginLeft={4}
+                  marginLeft={{base: 0, sm: 4}}
                   backgroundColor='white' 
                   borderRadius={9999} 
                   marginTop={{base: -12, sm: -16}} 
